@@ -1,0 +1,11 @@
+C:\Users\MAXx\source\repos\Materiales-Stock\Negocios\bin\Debug\Negocios.dll
+C:\Users\MAXx\source\repos\Materiales-Stock\Negocios\bin\Debug\Negocios.pdb
+C:\Users\MAXx\source\repos\Materiales-Stock\Negocios\bin\Debug\Datos.dll
+C:\Users\MAXx\source\repos\Materiales-Stock\Negocios\bin\Debug\Entidades.dll
+C:\Users\MAXx\source\repos\Materiales-Stock\Negocios\bin\Debug\Datos.pdb
+C:\Users\MAXx\source\repos\Materiales-Stock\Negocios\bin\Debug\Entidades.pdb
+C:\Users\MAXx\source\repos\Materiales-Stock\Negocios\obj\Debug\Negocios.csprojAssemblyReference.cache
+C:\Users\MAXx\source\repos\Materiales-Stock\Negocios\obj\Debug\Negocios.csproj.CoreCompileInputs.cache
+C:\Users\MAXx\source\repos\Materiales-Stock\Negocios\obj\Debug\Negocios.csproj.CopyComplete
+C:\Users\MAXx\source\repos\Materiales-Stock\Negocios\obj\Debug\Negocios.dll
+C:\Users\MAXx\source\repos\Materiales-Stock\Negocios\obj\Debug\Negocios.pdb
