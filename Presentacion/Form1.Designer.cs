@@ -142,6 +142,7 @@
             this.btnInsumos.Text = "Insumos";
             this.btnInsumos.UseVisualStyleBackColor = true;
             this.btnInsumos.Click += new System.EventHandler(this.btnInsumos_Click);
+            
             // 
             // panelSubPedido
             // 

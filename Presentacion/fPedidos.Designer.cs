@@ -53,6 +53,7 @@
             this.dgvPedidos.Name = "dgvPedidos";
             this.dgvPedidos.Size = new System.Drawing.Size(496, 179);
             this.dgvPedidos.TabIndex = 0;
+            this.dgvPedidos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPedidos_CellClick);
             this.dgvPedidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnAgregar
@@ -86,6 +87,7 @@
             this.btnEliminar.TabIndex = 3;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // button4
             // 

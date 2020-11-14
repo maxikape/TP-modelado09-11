@@ -17,8 +17,9 @@ namespace Presentacion
         {
             InitializeComponent();
             PersonalizarDiseño();
+            
         }
-
+        
         #region Metodos Submenu
 
         public void PersonalizarDiseño()

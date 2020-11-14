@@ -13,9 +13,9 @@ namespace Negocios
     {
         DatosPedidos objDatosPedidos = new DatosPedidos();
 
-        public int abmPedidos(string accion, Pedidos objPedidos)
+        public int abmPedidos(string accion, Pedidos objPedidos,int idmodifica)
         {
-            return objDatosPedidos.abmPedidos(accion, objPedidos);
+            return objDatosPedidos.abmPedidos(accion, objPedidos, idmodifica);
         }
 
         public DataSet MostrarPedidos(string cual)

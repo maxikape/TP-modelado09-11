@@ -26,10 +26,12 @@ namespace Presentacion
             dgvInsumos.Columns[3].HeaderText = "Cantidad";
             dgvInsumos.Columns[4].HeaderText = "Precio";
 
+            dgvReporte.ColumnCount = 4;
 
             IniDgv();
-             this.id = id;
-            
+            this.id = id;
+            DgvMostrarRep();
+
         }
         public NegMateriales objNegMateriales = new NegMateriales();
         public Materiales objEntMater = new Materiales();
@@ -102,6 +104,11 @@ namespace Presentacion
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void fInsumos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

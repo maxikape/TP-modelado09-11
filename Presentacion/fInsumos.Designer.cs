@@ -136,6 +136,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fInsumos";
             this.Text = "Insumos";
+            this.Load += new System.EventHandler(this.fInsumos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInsumos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReporte)).EndInit();
             this.ResumeLayout(false);

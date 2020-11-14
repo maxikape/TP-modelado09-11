@@ -18,7 +18,7 @@ namespace Datos
         private SqlDataReader leerfilas;
 
 
-        public int abmPedidos(string accion, Pedidos objpedidos)
+        public int abmPedidos(string accion, Pedidos objpedidos, int idmodifica)
         {
             int resultado = -1;
             string orden = string.Empty;
@@ -26,8 +26,12 @@ namespace Datos
                 orden = "insert into Pedidos values ('" + objpedidos.Cliente + "' ,  '" + objpedidos.Tipo_pedido + "', '" + objpedidos.Fecha_pedido + "');";
 
             if (accion == "Modificar")
-                orden = "update mauri set Pedidos = '" + objpedidos.Tipo_pedido + "' , '" + objpedidos.Fecha_pedido + "' where Cliente = '" + objpedidos.Cliente + "';";
-            
+                orden = "update Pedidos set cliente = '" + objpedidos.Cliente + "' ,  tipo_pedido = '" + objpedidos.Tipo_pedido + "' , fecha_pedido = '" + objpedidos.Fecha_pedido +"'  where id = " + idmodifica + ";";
+
+            if (accion == "Eliminar")
+                orden = "Delete from materiales where pedido_id=" + idmodifica
+             + "\n" + "Delete from pedidos where id = " + idmodifica;
+
             SqlCommand cmd = new SqlCommand(orden, conexion);
             try
             {
