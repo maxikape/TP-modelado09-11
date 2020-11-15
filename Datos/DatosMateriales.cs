@@ -34,7 +34,7 @@ namespace Datos
             catch (Exception e)
             {
 
-                throw new Exception("Error ABM ", e);
+                 throw new Exception("Error ABM ", e);
             }
 
             finally

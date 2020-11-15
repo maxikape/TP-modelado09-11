@@ -27,6 +27,10 @@ namespace Presentacion
             dgvInsumos.Columns[4].HeaderText = "Precio";
 
             dgvReporte.ColumnCount = 4;
+            dgvReporte.Columns[0].HeaderText = "Nombre";
+            dgvReporte.Columns[1].HeaderText = "Descripcion";
+            dgvReporte.Columns[2].HeaderText = "Material";
+            dgvReporte.Columns[3].HeaderText = "Cantidad";
 
             IniDgv();
             this.id = id;
@@ -75,9 +79,12 @@ namespace Presentacion
         {
              idMaterial = int.Parse(dgvInsumos.CurrentRow.Cells[0].Value.ToString());
             
-            objEntMater.Pedido_id = id;
-            objEntMater.Insumo_id = idMaterial;
-            objEntMater.Cantidad = int.Parse(txtCantidad.Text);
+  
+            if (String.IsNullOrEmpty(txtCantidad.Text))
+            {
+                MessageBox.Show("Complete todos los campos para realizar esta acción");
+            }
+            else { 
             int nGrabados = -1;
             nGrabados = objNegMateriales.InsertMateriales("Alta", objEntMater,idMaterial);//invocacion ala capa de negocio
 
@@ -87,18 +94,16 @@ namespace Presentacion
 
             else
             {
-                MessageBox.Show("Se agrego el registro correctamente!");
+                    objEntMater.Pedido_id = id;
+                    objEntMater.Insumo_id = idMaterial;
+                    objEntMater.Cantidad = int.Parse(txtCantidad.Text);
+                    MessageBox.Show("Se agrego el registro correctamente!");
                 IniDgv();
-                dgvReporte.ColumnCount = 4;
-                dgvReporte.Columns[0].HeaderText = "Nombre";
-                dgvReporte.Columns[1].HeaderText = "Pedido";
-                dgvReporte.Columns[2].HeaderText = "Material";
-                dgvReporte .Columns[3].HeaderText = "Cantidad";
                 DgvMostrarRep(); 
 
             }
-            
 
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)

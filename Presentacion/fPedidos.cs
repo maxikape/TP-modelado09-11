@@ -80,22 +80,31 @@ namespace Presentacion
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+
              int nGrabados = -1;
             //cargo los datos al objeto
             TxtBox_a_Obj();
-
-            nGrabados = objNegPedidos.abmPedidos("Alta", objEntPedidos, idmodifica);//invocacion ala capa de negocio
-
-            if (nGrabados == -1)
-                
-                MessageBox.Show("No se pudo agregar el pedido al sistema");
-            
+            if (String.IsNullOrEmpty(txtNombre.Text) || String.IsNullOrEmpty(txtTipoPed.Text))
+            {
+                MessageBox.Show("Complete todos los campos para realizar esta acción");
+            }
             else
             {
-                MessageBox.Show("Se agrego el registro correctamente!");
-                IniDgv();
-                
+                nGrabados = objNegPedidos.abmPedidos("Alta", objEntPedidos, idmodifica);//invocacion ala capa de negocio
+
+                if (nGrabados == -1)
+
+                    MessageBox.Show("No se pudo agregar el pedido al sistema");
+
+                else
+                {
+                    MessageBox.Show("Se agrego el registro correctamente!");
+                    IniDgv();
+
+                }
+
             }
+
 
         }
 

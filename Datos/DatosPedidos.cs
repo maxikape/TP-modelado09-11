@@ -29,6 +29,7 @@ namespace Datos
                 orden = "update Pedidos set cliente = '" + objpedidos.Cliente + "' ,  tipo_pedido = '" + objpedidos.Tipo_pedido + "' , fecha_pedido = '" + objpedidos.Fecha_pedido +"'  where id = " + idmodifica + ";";
 
             if (accion == "Eliminar")
+                //elimino primero la relacion
                 orden = "Delete from materiales where pedido_id=" + idmodifica
              + "\n" + "Delete from pedidos where id = " + idmodifica;
 
