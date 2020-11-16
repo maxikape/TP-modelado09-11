@@ -16,7 +16,7 @@ namespace Presentacion
     public partial class fPedidos : Form
     {
         public fPedidos()
-        {
+        {  
             InitializeComponent();
             dgvPedidos.ColumnCount = 4;
             dgvPedidos.Columns[0].HeaderText = "Codigo";

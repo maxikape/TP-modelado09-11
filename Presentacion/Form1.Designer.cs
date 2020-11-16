@@ -129,6 +129,8 @@
             // 
             this.btnInsumos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnInsumos.FlatAppearance.BorderSize = 0;
+            this.btnInsumos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnInsumos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.btnInsumos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsumos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsumos.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
@@ -204,6 +206,8 @@
             // 
             this.btnPedidos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPedidos.FlatAppearance.BorderSize = 0;
+            this.btnPedidos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnPedidos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.btnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPedidos.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;

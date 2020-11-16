@@ -12,7 +12,7 @@ namespace Presentacion
 {
     public partial class Form1 : Form
     {
-        int id;
+        int  id;
         public Form1()
         {
             InitializeComponent();

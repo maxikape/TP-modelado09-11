@@ -88,11 +88,11 @@ namespace Presentacion
             {
                 MessageBox.Show("Complete todos los campos para realizar esta acción");
             }
-            else { 
-            int nGrabados = -1;
-            nGrabados = objNegMateriales.InsertMateriales("Alta", objEntMater,idMaterial);//invocacion ala capa de negocio
+            else {
+                int nGrabados = -1;
+                nGrabados = objNegMateriales.InsertMateriales("Alta", objEntMater, idMaterial);//invocacion ala capa de negocio
 
-            if (nGrabados == -1)
+                if (nGrabados == -1)
 
                 MessageBox.Show("No se pudo agregar el pedido al sistema");
 
