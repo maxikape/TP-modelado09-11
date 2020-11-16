@@ -19,6 +19,8 @@ namespace Presentacion
         {
             InitializeComponent();
             dgvPedidos.ColumnCount = 4;
+            dgvPedidos.Columns[0].HeaderText = "Codigo";
+
             dgvPedidos.Columns[1].HeaderText = "Nombre";
             dgvPedidos.Columns[2].HeaderText = "Descripción";
             dgvPedidos.Columns[3].HeaderText = "Fecha de pedido";

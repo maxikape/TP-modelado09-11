@@ -65,7 +65,7 @@ namespace Datos
 
 
         public DataSet MostrarInsumos(string cual)
-        {
+        { 
             string orden = string.Empty;
             if (cual != "Todos")
                 orden = "select * from Insumos where id = " + int.Parse(cual) + ";";

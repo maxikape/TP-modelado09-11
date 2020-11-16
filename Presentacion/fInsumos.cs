@@ -22,6 +22,8 @@ namespace Presentacion
         {
             InitializeComponent();
             dgvInsumos.ColumnCount = 5;
+            dgvInsumos.Columns[0].Visible = false;
+            dgvInsumos.Columns[1].Visible = false;
             dgvInsumos.Columns[2].HeaderText = "Material";
             dgvInsumos.Columns[3].HeaderText = "Cantidad";
             dgvInsumos.Columns[4].HeaderText = "Precio";
@@ -76,10 +78,12 @@ namespace Presentacion
 
 
         private void btnAgregarMaterial_Click(object sender, EventArgs e)
-        {
+          {
              idMaterial = int.Parse(dgvInsumos.CurrentRow.Cells[0].Value.ToString());
-            
-  
+            objEntMater.Pedido_id = id;
+            objEntMater.Insumo_id = idMaterial;
+            objEntMater.Cantidad = int.Parse(txtCantidad.Text);
+
             if (String.IsNullOrEmpty(txtCantidad.Text))
             {
                 MessageBox.Show("Complete todos los campos para realizar esta acción");
@@ -94,9 +98,7 @@ namespace Presentacion
 
             else
             {
-                    objEntMater.Pedido_id = id;
-                    objEntMater.Insumo_id = idMaterial;
-                    objEntMater.Cantidad = int.Parse(txtCantidad.Text);
+                                  
                     MessageBox.Show("Se agrego el registro correctamente!");
                 IniDgv();
                 DgvMostrarRep(); 
